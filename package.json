@@ -15,7 +15,6 @@
   },
   "engines": ">=0.10.21",
   "scripts": {
-    //"test": "node node_modules/mocha/bin/mocha"
     "test" : "mocha -r"
   }
 }
