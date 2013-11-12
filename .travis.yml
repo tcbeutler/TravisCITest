@@ -1,8 +1,13 @@
 #travis.yml guidelines: http://about.travis-ci.org/docs/user/build-configuration/
 #travis.yml for nodejs: http://about.travis-ci.org/docs/user/languages/javascript-with-nodejs/
+#node supported versions: http://about.travis-ci.org/docs/user/ci-environment/
 
 #Default test script = "npm test"
 language: node_js
+
+before_script:
+  - chmod +x /home/travis/build/tcbeutler/TravisCITest
+
 node_js:
   - 0.10
   - 0.8
