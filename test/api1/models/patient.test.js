@@ -12,7 +12,7 @@ describe('patient', function(){
         it('"total" should exist with a value of "1"', function(){
             expect(patient).to.have.property('total')
                 .that.is.a('string')
-                .that.is.equal('1');
+                .that.is.equal('2');
         });
         it('"returned" should exist with a value of "1"', function(){
             expect(patient).to.have.property('returned')
