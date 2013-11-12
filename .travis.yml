@@ -1,4 +1,4 @@
-http://about.travis-ci.org/docs/
+#stuff http://about.travis-ci.org/docs/
 
 #Default test script = "npm test"
 language: node_js
