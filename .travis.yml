@@ -6,4 +6,6 @@ language: node_js
 node_js:
   - 0.10
 
-after_success: coverage/copy_coverage_torepo.sh
+after_success:
+  - chmod -R 777 coverage/copy_coverage_torepo.sh
+  - coverage/copy_coverage_torepo.sh
