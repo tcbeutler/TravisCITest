@@ -8,6 +8,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   #go into directory and copy data we're interested in to that directory
   cd coverage_checkout
+  mkdir ./coverage
   cp -rf $HOME/coverage/* ./coverage
 
   git config --global user.email "travis@travis-ci.org"
@@ -29,10 +30,11 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   #copy data we're interested in to other place
   cp -r coverage $HOME/coverage
 
-  git clone --quiet --branch=gh-pages https://2010976e1624b3640941858b87501f4560066125@github.com/tcbeutler/TravisCITest.git coverage_checkout > /dev/null
+  git clone --quiet --branch=gh-pages https://2010976e1624b3640941858b87501f4560066125@github.com/tcbeutler/TravisCITest.git coverage_checkout_pages > /dev/null
 
   #go into directory and copy data we're interested in to that directory
-  cd coverage_checkout
+  cd coverage_checkout_pages
+  mkdir ./coverage
   cp -rf $HOME/coverage/* ./coverage
 
   git config --global user.email "travis@travis-ci.org"
