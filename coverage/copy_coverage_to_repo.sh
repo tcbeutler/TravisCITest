@@ -14,8 +14,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git config --global user.name "Travis"
 
   #add, commit and push files
+  #[ci skip] to prevent constant build-commit-build loop.
   git add -f .
-  git commit -m "Code coverage results from Travis build $TRAVIS_BUILD_NUMBER pushed to git repository."
+  git commit -m "Code coverage results from Travis build $TRAVIS_BUILD_NUMBER pushed to git repository. [ci skip]"
   git push -fq origin master > /dev/null
 
   echo -e "Code coverage results moved to git.\n"
