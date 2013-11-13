@@ -7,6 +7,6 @@ node_js:
   - 0.10
 
 after_success:
-  - npm cover
+  - npm run-script cover
   - chmod -R 777 coverage/copy_coverage_to_repo.sh
   - coverage/copy_coverage_to_repo.sh
