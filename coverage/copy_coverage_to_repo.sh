@@ -8,7 +8,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   #go into directory and copy data we're interested in to that directory
   cd coverage_checkout
-  cp -rf $HOME/coverage/* .
+  cp -rf $HOME/coverage/* ./coverage
 
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
