@@ -7,14 +7,20 @@
   },
   "devDependencies": {
     "mocha": "~1.14.0",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "istanbul": "~0.1.44"
   },
   "main": "index",
   "bin": {
     "express": "./bin/express"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcbeutler/TravisCITest.git"
+  },
   "engines": ">=0.10.21",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha"
+    "test": "node node_modules/mocha/bin/mocha",
+    "coverage": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -r"
   }
 }

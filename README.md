@@ -1,1 +1,1 @@
-[![Build Status]( https://travis-ci.org/tcbeutler/TravisCITest.png)](http://travis-ci.org/tcbeutler/TravisCITest.png)
+[![Build Status]( https://travis-ci.org/tcbeutler/TravisCITest.png)](https://travis-ci.org/tcbeutler/TravisCITest)
