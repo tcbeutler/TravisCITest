@@ -1,6 +1,9 @@
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Pushing code coverage data to git.\n"
 
+  #copy data we're interested in to other place
+  cp -r coverage $HOME/coverage
+
   git clone --quiet --branch=master https://2010976e1624b3640941858b87501f4560066125@github.com/tcbeutler/TravisCITest.git coverage_checkout > /dev/null
 
   #go into directory and copy data we're interested in to that directory
