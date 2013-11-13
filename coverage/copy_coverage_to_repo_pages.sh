@@ -2,13 +2,13 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Pushing code coverage data to git public pages.\n"
 
   #copy data we're interested in to other place
-  cp -r coverage/lcov-report $HOME/coverage
+  cp -r coverage/lcov-report $HOME/coverage_pages
 
   git clone --quiet --branch=gh-pages https://2010976e1624b3640941858b87501f4560066125@github.com/tcbeutler/TravisCITest.git coverage_checkout_pages > /dev/null
 
   #go into directory and copy data we're interested in to that directory
   cd coverage_checkout_pages
-  cp -rf $HOME/coverage/* .
+  cp -rf $HOME/coverage_pages/* .
 
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis"
