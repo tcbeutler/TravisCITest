@@ -20,7 +20,7 @@
   },
   "engines": ">=0.10.21",
   "scripts": {
-    "test-nocoverage": "node node_modules/mocha/bin/mocha",
-    "test": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -r"
+    "test": "node node_modules/istanbul/lib/cli.js test node_modules/mocha/bin/_mocha -r",
+    "cover": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -r"
   }
 }
