@@ -21,7 +21,4 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   echo -e "Code coverage results moved to git public pages.\n"
 
-  echo ${TRAVIS_BRANCH}
-  echo ${TRAVIS_REPO_SLUG}
-
 fi
