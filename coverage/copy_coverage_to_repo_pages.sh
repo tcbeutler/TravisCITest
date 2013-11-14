@@ -20,8 +20,4 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git push -fq origin gh-pages > /dev/null
 
   echo -e "Code coverage results moved to git public pages.\n"
-
-  echo ${TRAVIS_BRANCH}
-  echo ${TRAVIS_REPO_SLUG}
-
 fi
