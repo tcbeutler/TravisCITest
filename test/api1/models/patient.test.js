@@ -2,7 +2,7 @@ var expect = require('chai').expect;
 
 describe('patient', function(){
     var patient = require('../../../apps/api1/models/patient');
-    var index = require('../../../apps/api1/index')
+    var index = require('../../../apps/api1/index') 
 
     describe('object attribute', function() {
         it('"href" should exist as empty string', function(){
