@@ -22,6 +22,7 @@
       "node" : ">=0.10.21"
   },
   "scripts": {
+    "start": "node apps/api1/index.js",
     "test": "node node_modules/istanbul/lib/cli.js test node_modules/mocha/bin/_mocha -r",
     "cover": "node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -r"
   }
